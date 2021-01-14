@@ -1,45 +1,138 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>
-            My Console
-        </title>
-    </head>
-    <body>
-        <h1>
-            Console
-        </h1>
-        <h3></h3>
-        <script>
-            console.log("My Console Project");
-            var first_name = "Ira";
-            console.log(first_name);
-            var middle_name = "Priyadarshini";
-            console.log(middle_name)
-            var last_name = "Sinha";
-            console.log(last_name);
-            console.log("I will now add together my first and middle names.");
-            var first_name_middle_name = first_name.concat(middle_name);
-            console.log(first_name_middle_name);
-            console.log("I will now add together all three of my names.");
-            var full_name = first_name_middle_name.concat(last_name);
-            console.log(full_name)
-            console.log("I will now print 2 numbers. I will perform Addition, Subtraction, Mutiplication, and Division on them.")
-            var num1 = 49;
-            console.log(num1)
-            var num2 = 7;
-            console.log(num2)
-            var addition = num1 + num2;
-            console.log(addition)
-            console.log("That was 49 + 7")
-            var subtraction = num1 - num2;
-            console.log(subtraction)
-            console.log("That was 49 - 7")
-            var multiplication = num1 * num2;
-            console.log(multiplication)
-            console.log("That was 49 x 7")
-            var division = num1 / num2;
-            console.log(division);
-            console.log("That was 49 ÷ 7")
-        </script>
-    </body>
+
+<head>
+    <title>HPMS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar-inverse" style="position:sticky;top:0;z-index:99999">
+        <div class="navbar-header"> <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="#">HPMS </a></div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="#schoolday">Method</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#whatsnew">What's New</a></li>
+                <li><a href="#alumni">Alumni</a></li>
+                <li><a href="#contactus">Contact Us</a></li>
+        </ul>
+        </div>
+    </nav>
+    <section id="home">
+    <center>
+        <div class="announcement">
+                <marquee direction="left" onmouseover="this.stop();" onmouseout="this.start();">
+        Contact us at admissions@hamiltonparkmontessori.com
+    </marquee>
+        </div>
+        <div class="page-header" id="videos">
+            <h2 class="text-capitalize">
+                Here is a fun video about our school!
+            </h2>
+        </div>
+        <center id="#home">
+
+            <iframe class="col-lg-6 col-md-6 col-sm-6 col-xs-12"src="https://player.vimeo.com/video/141588218" width="1750" height="700" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            <p><a href="https://vimeo.com/141588218" target="_blank">Why HPMS</a> on <a href="https://vimeo.com" target="_blank">Vimeo</a></p>
+        </center>
+
+    </center>
+    </section>
+    <section id="schoolday" class="page-header">
+        <div class="container">
+            <div class="row">
+        <h2 class="text-capitalize">learning tools</h2>
+        <div class="travel_mainDiv">
+            <img src="https://th.bing.com/th/id/OIP.xLFPh7bH-jALhkb_JdtIhAHaFj?w=218&h=180&c=7&o=5&pid=1.7" class="img-responsive image">
+            <h4 class="text-capitalize"><kbd>long chains</kbd></h4>
+            <hr>
+            <h5 class="text-success">Multiplication Tool</h5>
+            <p class="text-muted">The long chains and all the beads <br>
+                in HPMS help kids understand<br> square and cubes for multiplication.</p>
+        </div>
+        <div class="travel_mainDiv">
+        <img src="https://th.bing.com/th/id/OIP.PJU1_B1XzCfymLZfocQ7OAHaJS?w=192&h=241&c=7&o=5&pid=1.7" class="img-responsive">
+            <h4 class="text-capitalize"><kbd>Waseca Drawers</kbd></h4>
+            <hr>
+            <h5 class="text-success">Reading Tool</h5>
+            <p class="text-muted">The Waseca Drawers and all the cards in them <br>
+                provide simple ways to learn about<br> vowel and and consonant patterns.</p>
+        </div>
+        <div class="travel_mainDiv">
+            <img src="https://th.bing.com/th/id/OIP.wVWB8_SFU2Xf4A0B-YHg1wHaHa?w=165&h=180&c=7&o=5&pid=1.7" class="img-responsive" style="height: 242px" >
+            <h4><kbd>Puzzle Maps</kbd></h4>
+            <hr>
+            <h5 class="text-success">Geography Tool</h5>
+            <p class="text-muted">The jigsaw puzzles in<br>
+                                  the geography part are<br>
+                                key to learning <br>
+                                about continents, countries,<br>
+                                and the whole world itself.</p>
+        </div>
+        </div>
+        </div>
+    </section>
+        <section id="events">
+            <div class="page-header">
+                <h2>School Events</h2>
+            </div>
+            <div class="bg-primary movie_head my_big_font movie-meh" data-toggle="collapse" data-target="#event1">
+            Hibernation Day <i class="fa fa-sort-desc"></i>
+            </div>
+            <div class="collapse" id="event1">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 event">
+                    <img src="https://obpnt33gder26d77v3nrb994-wpengine.netdna-ssl.com/wp-content/uploads/2020/01/38104-Milkbarn-Kids-Bamboo-Baby-Zipper-Pajama-or-PJs-in-the-Blue-Whale-Print-360x360.jpg" class="img-responsive img-thumbnail">
+                </div>
+                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                    <h5 class="text-success text-left">
+                        Wear your 'jamas to school! Join in for loads of fun, including carols around the school!!!
+                    </h5>
+                </div>
+            </div>
+                        <div class="bg-primary movie_head my_big_font movie-meh" data-toggle="collapse" data-target="#event2">
+            Peace Day <i class="fa fa-sort-desc"></i>
+            </div>
+            <div class="collapse" id="event2">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 event">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvn5VBLcTs4iHu9axsNYvre1SLSdWbpdiYrQ&usqp=CAU" class="img-responsive img-thumbnail">
+                </div>
+                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                    <h5 class="text-success text-left">
+                       Peace! Celebrate the school's foundation anually with songs and fun!! And show lots of school spirit.
+                    </h5>
+                </div>
+            </div>
+        </section>
+    <section id="contactus">
+    <div class="container">
+        <div class="page-header col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <h2 class="text-capitalize">contact us</h2>
+    </div>
+        
+    <div id="event1" class="collapse"></div>
+        <div id="map">
+        <iframe class="col-lg-4 col-md-4 col-sm-4 col-xs-12"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1068.9939294928533!2d-74.04408310438828!3d40.727450186830396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2574da99dd6d5%3A0xb24717f3015f0eb5!2sHamilton%20Park%20Montessori!5e0!3m2!1sen!2sus!4v1609185181723!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <div id="details">
+            <img class="img-responsive img-circle col-lg-3 col-md-3 col-sm-3 col-xs-4" src="https://th.bing.com/th/id/OIP.10YMtZBlk3eBwnIT6wQCiQHaDf?w=318&h=165&c=7&o=5&pid=1.7>">
+            <h3>Head: </h3><h4>Ms. Alexa C. Huxel</h4>
+            <a href="mailto:admissions@hamiltonparkmontessori.com?subject=Hi" target="_blank">
+                <h5><i class="fa fa-envelope"></i>&nbsp;&nbsp;admissions@hamiltonparkmontessori.com</h5>
+            </a>
+            <a href="makefreecallsonline.com" target="_blank">
+                <h5><i class="fa fa-phone-square"></i>&nbsp;&nbsp;201 533 1910</h5>
+            </a>
+        
+        </div>
+        </div>
+    </section>
+    <br><br><br><br><br>
+</body>
+
 </html>
